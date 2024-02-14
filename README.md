@@ -37,3 +37,60 @@ euros
 • centdollarse: stores the cents of the amount obtained from converting the euros
 • wholetotal: stores the whole dollars of the total amount
 • centtotal: stores the cents of the total amount
+
+Test code by using the numbers below:
+
+Pesos = 78.24
+Euros = 108.20
+
+78.24 pesos:     4 US DOLLARS WITH 48 CENTS
+
+108.20 euros:     115 US DOLLARS WITH 11 CENTS
+
+Total:       119 US DOLLARS WITH 59 CENTS
+
+
+
+Pesos = 254.19
+Euros = 48.36
+
+78.24 pesos:     14 US DOLLARS WITH 55 CENTS
+
+108.20 euros:     51 US DOLLARS WITH 45 CENTS
+
+Total:       66 US DOLLARS WITH 0 CENTS
+
+
+
+Pesos = 188.25
+Euros = 130.00
+
+78.24 pesos:     10 US DOLLARS WITH 78 CENTS
+
+108.20 euros:     138 US DOLLARS WITH 30 CENTS
+
+Total:       149 US DOLLARS WITH 8 CENTS
+
+
+Pesos = 200.00
+Euros = 200.00
+
+78.24 pesos:     11 US DOLLARS WITH 45 CENTS
+
+108.20 euros:     212 US DOLLARS WITH 77 CENTS
+
+Total:       224 US DOLLARS WITH 22 CENTS
+
+
+Pesos = 856.70
+Euros = 93.07
+
+78.24 pesos:     49 US DOLLARS WITH 4 CENTS
+
+108.20 euros:     99 US DOLLARS WITH 1 CENTS
+
+Total:       148 US DOLLARS WITH 5 CENTS
+
+
+
+
