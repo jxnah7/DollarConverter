@@ -62,22 +62,21 @@ cout << "Mexican Peso and Euro to U.S. Dollar converter" << endl;           // O
 pDollars = pesos / DOL2MEX;
 eDollars = euros / DOL2EURO;
 
-tDollars = pDollars + eDollars;
-tDollars = round(tDollars * 100.0) / 100.0;
-
-wholetotal = static_cast<int>(tDollars);            // converts the total into a seperate variable holding the total whole dollars
-centtotal = static_cast<int>((tDollars - wholetotal) / 100);          // converts the total into a seperate variable holding the total whole cents
-
-wholedollarsp = static_cast<int>(round(pDollars));
-centdollarsp = static_cast<int>((pDollars - wholedollarsp) * 100);
-
-wholedollarse = static_cast<int>(round(eDollars));
-centdollarse = static_cast<int>((eDollars - wholedollarse) * 100);
+pDollars = round(pDollars * 100.0) / 100.0;
+eDollars = round(eDollars * 100.0) / 100.0;
 
 cout << endl << fixed << setprecision(2);
-cout << endl << pesos << " pesos: " << '\t' << wholedollarsp << " US dollars with " << centdollarsp << " cents" << endl;
-cout << endl << euros << " euros: " << '\t' << wholedollarse << " US dollars with " << centdollarse << " cents" << endl;
-cout << endl << '\t' << " total: " << '\t' << wholetotal << " US dollars with " << centtotal << " cents" << endl;
+
+wholedollarsp = trunc(pDollars);
+centdollarsp = round((pDollars - wholedollarsp) * 100.) ;
+wholedollarse = trunc(eDollars);
+centdollarse = round((eDollars - wholedollarse) * 100.);
+wholetotal = trunc(eDollars + pDollars);
+centtotal = round(((eDollars + pDollars) - wholetotal) * 100. );
+
+cout << endl << right << setw(10) << pesos << " pesos: " << right << setw(10) << wholedollarsp << " US dollars with " << centdollarsp << " cents" << endl;
+cout << endl << endl << right << setw(10) << euros << " euros: " << right << setw(10) << wholedollarse << " US dollars with " << centdollarse << " cents" << endl;
+cout << endl << endl << right << setw(18) << " Total: " << right << setw(10) << wholetotal << " US dollars with " << centtotal << " cents" << endl << endl;
 
 // Do NOT remove or modify the following statements
 
